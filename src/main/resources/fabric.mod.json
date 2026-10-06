@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "block-log",
+	"version": "${version}",
+	"name": "Block Log",
+	"description": "Server-side block change logger with an async, bounded SQLite (WAL) writer. Records old/new block state, player and time for every block change, with /blog search, inspect, rollback, flush and status.",
+	"authors": [
+		"VWS Digital"
+	],
+	"license": "CC0-1.0",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"com.vwsdigital.blocklog.BlockLog"
+		]
+	},
+	"mixins": [
+		"block-log.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

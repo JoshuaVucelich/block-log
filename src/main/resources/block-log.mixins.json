@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.vwsdigital.blocklog.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"LevelMixin",
+		"ServerPlayerGameModeMixin",
+		"ServerExplosionMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
