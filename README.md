@@ -1,10 +1,10 @@
 # Block Log
 
-Server-side Fabric mod for Minecraft 26.3. It writes every block change to a SQLite file in the world folder, so you can search what happened and roll it back.
+Server-side Fabric mod for Minecraft 1.21.11. It writes every block change to a SQLite file in the world folder, so you can search what happened and roll it back.
 
-Mod id `block-log`, version 1.0.0. Needs Fabric Loader 0.19.5 or newer, Fabric API, and Java 25 or newer. The mod is server-only (`"environment": "server"`), so players can join without installing it. License is CC0-1.0. Author is VWS Digital.
+Mod id `block-log`, version 1.0.1+1.21.11-fabric. Needs Fabric Loader 0.19.5 or newer, Fabric API 0.141.6+1.21.11, and Java 21 or newer. The mod is server-only (`"environment": "server"`), so players can join without installing it. License is CC0-1.0. Author is VWS Digital.
 
-`main` matches Minecraft 26.3. Older releases live on `mc/26.1`, `mc/26.1.1`, `mc/26.1.2`, and `mc/26.2`.
+This branch is the Fabric build for Minecraft 1.21.11, the last 1.21 patch. Year-numbered releases live on `mc/26.1`, `mc/26.1.1`, `mc/26.1.2`, `mc/26.2`, and `mc/26.3`. `main` tracks 26.3.
 
 ## What gets logged
 
