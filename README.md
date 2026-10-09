@@ -3,7 +3,7 @@
 NeoForge port of the Fabric mod. Logs every block change to a local SQLite database so griefing can be searched and rolled back — including blocks
 players cannot normally place back, such as bedrock and netherrack, because the **full old block state** is stored.
 
-- Mod id: `block-log` · Version 1.0.1+26.2-neoforge · Minecraft 26.2 · NeoForge 26.2.0.89 (stable line `[26.2,26.3)`) · Java 25+
+- Mod id: `block_log` (NeoForge ids cannot contain a hyphen; the Fabric id stays `block-log`). Version 1.0.1+26.2-neoforge. Minecraft 26.2. NeoForge 26.2.0.89, accepted range `[26.2,26.3)`. Java 25+. The jar is still named `block-log`.
 - Install it on the server. Connecting players do not need it. NeoForge has no Fabric-style `environment: server` flag, so a client that has the jar installed will also log singleplayer.
 - License: CC0-1.0. Author: VWS Digital.
 

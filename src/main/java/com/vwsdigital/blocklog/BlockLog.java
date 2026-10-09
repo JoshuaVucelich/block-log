@@ -24,7 +24,8 @@ import java.nio.file.Path;
 
 @Mod(BlockLog.MOD_ID)
 public class BlockLog {
-	public static final String MOD_ID = "block-log";
+	/** NeoForge mod ids cannot contain a hyphen, so this is block_log rather than the Fabric id block-log. */
+	public static final String MOD_ID = "block_log";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	private static volatile BlockLogWriter writer;
