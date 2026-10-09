@@ -26,6 +26,13 @@ dependencies {
 	// SQLite JDBC driver, bundled inside the mod jar (jar-in-jar) so the dedicated server has it.
 	implementation "org.xerial:sqlite-jdbc:${project.sqlite_jdbc_version}"
 	include "org.xerial:sqlite-jdbc:${project.sqlite_jdbc_version}"
+
+	testImplementation "org.junit.jupiter:junit-jupiter:5.12.2"
+	testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+}
+
+tasks.named("test") {
+	useJUnitPlatform()
 }
 
 processResources {
