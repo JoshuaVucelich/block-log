@@ -3,7 +3,7 @@
 Logs every block change to a local SQLite database so griefing can be searched and rolled back — including blocks
 players cannot normally place back, such as bedrock and netherrack, because the **full old block state** is stored.
 
-- Mod id: `block-log` · Version 1.0.0 · Minecraft 26.3 · Fabric Loader ≥ 0.19.5 · Fabric API · Java 25+
+- Mod id: `block-log` · Version 1.0.1+26.3-fabric · Minecraft 26.3 · Fabric Loader ≥ 0.19.5 · Fabric API 0.162.0+26.3 · Java 25+
 - Server-only (`"environment": "server"`); clients don't need it.
 - License: CC0-1.0. Author: VWS Digital.
 
