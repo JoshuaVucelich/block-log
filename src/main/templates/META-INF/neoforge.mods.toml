@@ -1,0 +1,27 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="VWS Digital"
+description='''
+Server-side block change logger with an async, bounded SQLite (WAL) writer. Records old/new block state, player and time for every block change, with /blog search, inspect, rollback, flush and status.
+'''
+
+[[mixins]]
+config="block-log.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[26.2,26.3)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"

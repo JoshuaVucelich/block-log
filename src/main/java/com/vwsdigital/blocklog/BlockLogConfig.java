@@ -1,6 +1,6 @@
 package com.vwsdigital.blocklog;
 
-import net.fabricmc.loader.api.FabricLoader;
+import net.neoforged.fml.loading.FMLPaths;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -17,7 +17,7 @@ public final class BlockLogConfig {
 
 	static BlockLogConfig load() {
 		BlockLogConfig c = new BlockLogConfig();
-		Path file = FabricLoader.getInstance().getConfigDir().resolve("block-log.properties");
+		Path file = FMLPaths.CONFIGDIR.get().resolve("block-log.properties");
 		Properties p = new Properties();
 		try {
 			if (Files.exists(file)) {

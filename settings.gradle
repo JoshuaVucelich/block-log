@@ -1,13 +1,16 @@
 pluginManagement {
 	repositories {
 		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
+			name = 'NeoForged'
+			url = 'https://maven.neoforged.net/releases'
 		}
-		mavenCentral()
 		gradlePluginPortal()
+		mavenCentral()
 	}
 }
 
-// Should match your modid
+plugins {
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
 rootProject.name = 'block-log'
